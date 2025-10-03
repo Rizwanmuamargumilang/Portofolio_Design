@@ -223,4 +223,29 @@ body {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+    /* === SCROLL ANIMATION === */
+section, .gallery img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+section.show, .gallery img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === DARK MODE STYLE === */
+body.dark-mode {
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+  background: #111;
+}
+body.dark-mode a {
+  color: #f0c060;
+}
+
 }
